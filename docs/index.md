@@ -113,6 +113,10 @@ Our research has revealed three fundamental principles:
 
 Powered by differentiable programming, differentiable imaging has emerged as a pivotal force in computational imaging—its significance far transcends uncertainty-aware computation. Acting as a unifying nexus, it enables seamless integration across the core components of computational imaging: it harmonizes hardware design with software reconstruction, ensuring a fluid transition from physical devices to algorithmic implementations; it connects numerical optimization and machine learning, fueling continuous advancements in algorithm performance; it bridges mathematical theory, information theory, and physical realization, translating abstract concepts into practical, high-impact technical solutions; and it drives deep integration across optics, material science, and computational sciences, dismantling long-entrenched disciplinary silos. Through this interconnected framework, all components mutually reinforce and co-evolve, ultimately realizing the long-pursued goal of global optimization in computational imaging.
 
+| <img src="img/digital_twin.png" alt="Digital Twin equipped Computational Imaging" class="center" style="width: 600px;"> |
+| :----------------------------------------------------------: |
+| Digital Twin equipped Computational Imaging. |
+
 The potential of differentiable imaging extends well beyond its current applications. Future advancements may include integration with digital twin technology and contributions to AI for Science initiatives [^2], thereby unlocking new paradigms for scientific discovery and technological innovation.
 
 
