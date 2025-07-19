@@ -60,9 +60,32 @@ Effective co-design requires multi-variable optimization with accurate mathemati
 
 Differentiable imaging [^1] fundamentally redefines co-design by integrating physically accurate models within machine learning architectures for comprehensive end-to-end optimization. This framework specifically targets uncertainties that cause critical mismatches between real-world systems and their numerical representations. Through differentiable programming and automatic differentiation, these uncertainties are explicitly modeled and their impacts systematically mitigated.
 
+By leveraging differentiable programming, differentiable imaging offers an elegant solution to the limitations of conventional computational imaging. Rather than pursuing increasingly complex yet cumbersome physical models, differentiable imaging fundamentally reconceptualizes the imaging process. It transforms the traditional encoding model $y=f(x)$  into a more comprehensive formulation $y=f(x, \theta)$, where $\theta$ represents a parameter set specifically designed to address and compensate for mismatches between physical systems and numerical models.
+
+The complete forward model captures the entire imaging pipeline through a series of interconnected transformations:
+
+$$\begin{equation}
+y = f(x, \theta), \qquad f = f_{noise} \circ f_c \circ f_{oc} \circ f_x \circ f_{oi} \circ f_i,
+\end{equation}$$
+
+where the function composition operator $\circ$ connects each system component, and $\theta = \{ \theta_c, \theta_{oc}, \ldots \}$ encompasses all system parameters. Each component corresponds to specific physical processes within the imaging system, from illumination characteristics through object interactions to sensor behavior and noise sources.
+
+This comprehensive forward model enables the formulation of an elegant inverse problem that simultaneously optimizes system parameters while reconstructing images:
+
+$$\begin{equation}
+x^*, \theta^* = \text{argmin}_{x, \theta} \mathcal{L}(f(x, \theta), y) + \sum_{n=1}^N \beta_n \mathcal{R}_n(x) \\ 
+s.t. \quad x \in \Omega_x, \theta \in \Omega_{\theta}
+\end{equation}$$
+
+Here, $\mathcal{L}(f(x, \theta), y)$ represents the fidelity term that quantifies the discrepancy between the model predictions and measured data. While the ${\ell_2}$ loss $\mathcal{L}(f(x, \theta), y) = \|f(x, \theta) - y\|^2$ is commonly used due to its mathematical tractability and compatibility with Gaussian noise assumptions, the selection of an appropriate fidelity function depends critically on the specific imaging conditions and noise characteristics.
+
+For imaging scenarios dominated by Poisson noise (common in low-photon-count regimes like fluorescence microscopy), negative log-likelihood or Kullback-Leibler divergence-based losses often prove more effective. In cases with outliers or heavy-tailed noise distributions, robust loss functions such as Huber loss or ${\ell_1}$ norm can provide superior performance. Specialized applications may benefit from composite or perceptual loss functions that incorporate domain-specific knowledge.
+
+The regularization terms $\mathcal{R} _n(\cdot)$ weighted by factors $\beta _n$ impose prior knowledge about the solution space, while the physical constraints $\Omega _{x}$ and $\Omega _{\theta}$ ensure that solutions remain within realistic physical bounds.
+
 The framework introduces two primary innovations:
 
-1. **System Imperfection Modeling:** Direct integration of hardware imperfections into imaging models (represented as `f(x,θ)` where `θ` encapsulates imperfection parameters)
+1. **System Imperfection Modeling:** Direct integration of hardware imperfections into imaging models (represented as $f(x,\theta)$ where $\theta$ encapsulates uncertainty parameters)
 2. **Differentiable Optimization:** Implementation of inverse problem solving using differentiable optimization algorithms, enabling gradient-based optimization across the entire imaging pipeline
 
 This integrated methodology facilitates closed-loop optimization, resulting in robust, high-performance imaging systems that maintain effectiveness despite real-world imperfections.
