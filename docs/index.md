@@ -36,11 +36,20 @@ Differentiable Imaging is an innovative framework that seamlessly integrates opt
 
 ## Introduction
 
-| <img src="img/uncertainty.png" alt="Sources of uncertainty in computational imaging systems" class="center" style="width: 600px;"> |
+
+
+
+
+<!-- | <img src="img/uncertainty.png" alt="Sources of uncertainty in computational imaging systems" class="center" style="width: 600px;"> |
 | :----------------------------------------------------------: |
-| Uncertainties that lead to mismatch between real systems and numerical modeling. |
+| Uncertainties that lead to mismatch between real systems and numerical modeling. | -->
 
 
+
+
+| <img src="img/uncertainty.gif" alt="Sources of uncertainty in computational imaging systems" class="center" style="width: 100%;"> |
+| :----------------------------------------------------------: |
+| Typical Uncertainties that lead to mismatch. |
 
 Computational imaging has made significant advances but continues to face substantial challenges from system uncertainties. These uncertainties can be categorized into five key areas:
 
