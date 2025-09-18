@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=24b9fe98a8e91ad11933116eb2cc4324648a8158">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=8d814b8133e7d05aee5e7928b3f4d14b593e09dd">
 
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -69,10 +69,13 @@
       <section id="main_content" class="inner">
         <h2 class="section-title">Differentiable Imaging</h2>
 
+<p><a href="https://en.wikipedia.org/wiki/Differentiable_imaging" target="_blank" rel="noopener">
+	<img src="https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" style="width: 100px; height: 100px; float: right; margin-left: 12px; margin-bottom: 6px; margin-top: -80px" />
+</a></p>
+
 <p><br /></p>
 <nav class="text-center" style="width: 100%">
-<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/apxr.202200118">Differentiable Imaging: A New Tool for Computational Optical Imaging</a> </nav>
-<h5 class="pubname"> Advanced Physics Research, 2023 </h5>
+<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/apxr.202200118">Differentiable Imaging: A New Tool for Computational Optical Imaging</a>, Advanced Physics Research, 2023</nav>
 <nav class="text-center" style="width: 100%">
   <a href="https://ni-chen.github.io/" class="author">Ni Chen</a>
   <a href="http://www.holoddd.com/" class="author">Liangcai Cao</a>
@@ -82,8 +85,7 @@
 </nav>
 
 <p><br /></p>
-<nav class="text-center" style="width: 100%"> <a href="https://spj.science.org/doi/10.34133/adi.0117">Differentiable Imaging: progress, challenges, and outlook</a></nav>
-<h5 class="pubname"> Advanced Devices &amp; Instrumentation, 2025 </h5>
+<nav class="text-center" style="width: 100%"> <a href="https://spj.science.org/doi/10.34133/adi.0117">Differentiable Imaging: progress, challenges, and outlook</a>, Advanced Devices &amp; Instrumentation, 2025 </nav>
 <nav class="text-center" style="width: 100%">
   <a href="https://ni-chen.github.io/" class="author">Ni Chen</a>
   <a href="http://www.davidbrady.net/" class="author"> David J. Brady </a>
@@ -92,7 +94,7 @@
 
 <h2 id="abstract">Abstract</h2>
 
-<p>Differentiable Imaging is an innovative framework that seamlessly integrates optical hardware with computational algorithms to address critical challenges in traditional computational imaging. By leveraging differentiable programming and automatic differentiation, this approach enables end-to-end optimization of complete imaging systems while accounting for real-world hardware imperfections. The result is simplified hardware designs, enhanced imaging performance, and improved system robustness across diverse imaging modalities. The differentiable linkage among all system components ultimately enables genuine co-design in computational imaging.</p>
+<p>Differentiable Imaging is a framework that seamlessly integrates optical hardware with computational algorithms to address critical challenges in traditional computational imaging. By leveraging differentiable programming, this approach enables end-to-end optimization of the whole imaging systems while accounting for real-world physical imperfections. The differentiable imaging framework leads to simplified hardware designs, enhanced imaging performance, and resilience imaging across diverse imaging modalities. The differentiable linkage among all system components ultimately enables genuine co-design in computational imaging.</p>
 
 <h2 id="introduction">Introduction</h2>
 
@@ -160,10 +162,6 @@ s.t. \quad x \in \Omega_x, \theta \in \Omega_{\theta}
 \end{equation}\]
 
 <p>Here, $\mathcal{L}(f(x, \theta), y)$ represents the fidelity term that quantifies the discrepancy between the model predictions and measured data. While the ${\ell_2}$ loss $\mathcal{L}(f(x, \theta), y) = |f(x, \theta) - y|^2$ is commonly used due to its mathematical tractability and compatibility with Gaussian noise assumptions, the selection of an appropriate fidelity function depends critically on the specific imaging conditions and noise characteristics.</p>
-
-<p>For imaging scenarios dominated by Poisson noise (common in low-photon-count regimes like fluorescence microscopy), negative log-likelihood or Kullback-Leibler divergence-based losses often prove more effective. In cases with outliers or heavy-tailed noise distributions, robust loss functions such as Huber loss or ${\ell_1}$ norm can provide superior performance. Specialized applications may benefit from composite or perceptual loss functions that incorporate domain-specific knowledge.</p>
-
-<p>The regularization terms $\mathcal{R} _n(\cdot)$ weighted by factors $\beta _n$ impose prior knowledge about the solution space, while the physical constraints $\Omega _{x}$ and $\Omega _{\theta}$ ensure that solutions remain within realistic physical bounds.</p>
 
 <p>The framework introduces two primary innovations:</p>
 
@@ -274,7 +272,7 @@ s.t. \quad x \in \Omega_x, \theta \in \Omega_{\theta}
   
   <!-- Foot note -->
   
-  <p class="copyright">Differentiable-Imaging maintained by <a href="https://ni-chen.github.io">Ni Chen</a> | Last updated: August 11, 2025 </p>
+  <p class="copyright">Differentiable-Imaging maintained by <a href="https://ni-chen.github.io">Ni Chen</a> | Last updated: September 18, 2025 </p>
   
 
 </footer>
