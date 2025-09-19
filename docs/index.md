@@ -4,10 +4,11 @@ title: "Differentiable Imaging"
 ---
 
 
-<h2 class="section-title">Differentiable Imaging<sup>TM</sup></h2>
-<div class="text-center" style="width: 100%; font-size: 1.05em; color: #333; margin-top: 4px;">
-  A paradigm for resilient computational imaging
+<h2 class="section-title">Differentiable Imaging<sup style="font-size: 0.5em;">TM</sup>
+<div class="text-center" style="width: 100%; font-size: 0.8em; color: #666; margin-top: 4px;">
+<em>A paradigm for resilient computational imaging</em>
 </div>
+</h2>
 
 
 <a href="https://en.wikipedia.org/wiki/Differentiable_imaging" target="_blank" rel="noopener">
