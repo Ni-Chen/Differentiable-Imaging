@@ -14,8 +14,8 @@ title: "Differentiable Imaging"
 </a>
 
 <br>
-<nav class="text-center" style="width: 100%">
-<b><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/apxr.202200118">Differentiable Imaging: A New Tool for Computational Optical Imaging</a></b>, <em>Advanced Physics Research</em>, 2023</nav>
+<nav class="text-center" style="width: 100%; font-size:1.2em;">
+📄 <b><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/apxr.202200118">Differentiable Imaging: A New Tool for Computational Optical Imaging</a></b>, <em>Advanced Physics Research</em>, 2023</nav>
 <nav class="text-center">
   <a href="https://ni-chen.github.io/">Ni Chen</a><sup>1,2</sup>, 
   <a href="http://www.holoddd.com/">Liangcai Cao</a><sup>3</sup>, 
@@ -23,19 +23,25 @@ title: "Differentiable Imaging"
   <a href="http://oeqelab.snu.ac.kr/">Byoungho Lee</a><sup>5</sup>, 
   <a href="https://www.eee.hku.hk/~elam">Edmund Y. Lam</a><sup>6</sup>
 </nav>
-<div style="text-align: center; width: 100%; font-size: 0.9em; color: #666; margin-top: 5px;">
-  <em><sup>1</sup>King Abdullah University of Science and Technology • <sup>2</sup>University of Arizona • <sup>3</sup>Tsinghua University • <sup>4</sup>Virginia Tech • <sup>5</sup>Seoul National University • <sup>6</sup>The University of Hong Kong</em>
+<div style="text-align: center; width: 100%; font-size: 0.9em; color: #666;">
+  <p style="margin: 2px 0;"><sup>1</sup>King Abdullah University of Science and Technology</p>
+  <p style="margin: 2px 0;"><sup>2</sup>University of Arizona</p>
+  <p style="margin: 2px 0;"><sup>3</sup>Tsinghua University</p>
+  <p style="margin: 2px 0;"><sup>4</sup>Virginia Tech</p>
+  <p style="margin: 2px 0;"><sup>5</sup>Seoul National University</p>
+  <p style="margin: 2px 0;"><sup>6</sup>The University of Hong Kong</p>
 </div>
 
-<br>
-<nav class="text-center" style="width: 100%"> <b><a href="https://spj.science.org/doi/10.34133/adi.0117">Differentiable Imaging: progress, challenges, and outlook</a></b>, <em>Advanced Devices & Instrumentation</em>, 2025 </nav>
+
+<nav class="text-center" style="width: 100%; font-size:1.2em;"> 📄 <b><a href="https://spj.science.org/doi/10.34133/adi.0117">Differentiable Imaging: Progress, Challenges, and Outlook</a></b>, <em>Advanced Devices & Instrumentation</em>, 2025 </nav>
 <nav class="text-center">
   <a href="https://ni-chen.github.io/">Ni Chen</a><sup>1</sup>,
   <a href="http://www.davidbrady.net/">David J. Brady</a><sup>2</sup>,
   <a href="https://www.eee.hku.hk/~elam">Edmund Y. Lam</a><sup>1</sup>
 </nav>
-<div style="text-align: center; width: 100%; font-size: 0.9em; color: #666; margin-top: 5px;">
-  <em><sup>1</sup>The University of Hong Kong • <sup>2</sup>University of Arizona</em>
+<div style="text-align: center; width: 100%; font-size: 0.9em; color: #666;">
+  <p style="margin: 2px 0;"><sup>1</sup>The University of Hong Kong</p>
+  <p style="margin: 2px 0;"><sup>2</sup>University of Arizona</p>
 </div>
 
 
