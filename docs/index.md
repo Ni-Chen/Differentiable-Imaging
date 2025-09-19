@@ -6,7 +6,7 @@ title: "Differentiable Imaging"
 
 <h2 class="section-title">Differentiable Imaging<sup style="font-size: 0.5em;">TM</sup>
 <div class="text-center" style="width: 100%; font-size: 0.8em; color: #666; margin-top: 4px;">
-<em>A paradigm for resilient computational imaging</em>
+<em>A paradigm for resilient and co-designed computational imaging</em>
 </div>
 </h2>
 
