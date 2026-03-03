@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jekyll build artifacts
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/.sass-cache/
+
+# Ruby/Bundler artifacts
+docs/.bundle/
+docs/vendor/bundle/
+bundle/
+vendor/bundle/
+
+# Logs and temp files
+*.log
+*.tmp
